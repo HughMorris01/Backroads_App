@@ -19,7 +19,12 @@ const Footer = () => {
         {footerIcons.map(({ id, href, className }) => {
           return (
             <li key={id}>
-              <a href={href} target="_blank" className="footer-icon">
+              <a
+                href={href}
+                target="_blank"
+                rel="noreferrer"
+                className="footer-icon"
+              >
                 <i className={className}></i>
               </a>
             </li>
